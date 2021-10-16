@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <link rel="stylesheet" href="./css/style.css">
+    <title>Netflix</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="./img/logo.png" alt=""></a>
+        <ul class="nav">
+            <li><a href="">Home</a></li>
+            <li><a href="">TV Shows</a></li>
+            <li><a href="">Movies</a></li>
+            <li><a href="">Latest</a></li>
+            <li><a href="">My List</a></li>
+        </ul>
+        <div class="search">
+            <input type="search" placeholder="Search">
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </div>
+    </header>
+    <div class="banner">
+        <img src="./img/bg.jpg" alt="" class="bg">
+        <div class="content">
+            <img src="./img/name.png" alt="" class="movieTitle">
+            <h4>
+                <span>2020</span>
+                <span><i>12+</i></span>
+                <span>1h 55min</span>
+                <span>Action</span>
+            </h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore maxime soluta magnam dignissimos mollitia expedita suscipit. Cupiditate temporibus magnam, facere harum ipsa hic dolores voluptas minima repellendus, totam aliquid similique aspernatur veritatis blanditiis obcaecati odit nisi sunt suscipit, molestiae maiores consequatur minus! Necessitatibus perspiciatis nobis at quas cum itaque saepe?</p>
+            <div class="buttons">
+                <a href=""><i class="fa fa-play"></i> Play</a>
+                <a href=""><i class="fa fa-plus"></i> My List</a>
+            </div>
+        </div>
+        <a href="#" class="play" onclick="toggleVideo();"><img src="./img/play.png" alt="">Watch Trailer</a>
+    </div>
+    <div class="trailer">
+        <iframe id="video" class="video" width="1120" height="630" src="https://www.youtube.com/embed/rVn2NCgCVLU?enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <img src="./img/close.png" alt="" class="close" onclick="toggleVideo()">
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+</html>
